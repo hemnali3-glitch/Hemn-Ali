@@ -1,0 +1,72 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+
+body{
+background:#070b14;
+font-family:Arial;
+color:white;
+padding:40px;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:#111827;
+padding:30px;
+border-radius:20px;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+background:#1f2937;
+color:white;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#00bfff;
+color:white;
+cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Admin Dashboard 🚗</h1>
+
+<input type="text" id="name" placeholder="Car Name">
+
+<input type="text" id="price" placeholder="Price">
+
+<input type="text" id="speed" placeholder="Speed">
+
+<input type="text" id="image" placeholder="Image URL">
+
+<button onclick="addCar()">
+Post Car
+</button>
+
+<div id="cars"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
